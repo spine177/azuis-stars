@@ -1,0 +1,279 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('clashRoyaleBG.webp');
+    backdrop-filter: blur(5px);
+}
+
+#real-body {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    z-index: 0;
+}
+
+#warning-section {
+    max-width: 1000px;
+    height: 40px;
+    margin: auto;
+    padding: 20px;
+
+    background-color: #ecf454;
+    position: sticky;
+
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+
+    top: 0;
+    z-index: 1;
+}
+
+#warning-sign-img {
+    float: left;
+    width: 70px;
+    height: auto;
+}
+
+#warning-text {
+    margin-left: 120px;
+}
+
+#warning-h {
+    margin: 0;
+}
+
+#warning-h {
+    margin: 0;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+section {
+    padding: 20px;
+}
+
+#intro {
+    background-color: #eeeeee;
+    margin-bottom: 20px;
+}
+
+#charts {
+    background-color: #eeeeee;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.sticky {
+    position: fixed; 
+    top: 0;
+}
+
+.table {
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    width: 800px;
+    height: 200px;
+}
+
+.qualified {
+    background-color: rgb(187, 236, 190);
+    text-align: center;
+}
+
+.table-info {
+    background-color: rgb(221, 221, 221);
+}
+
+.not-qualified {
+    background-color: rgb(246, 246, 246);
+    text-align: center;
+}
+
+.potential-relegation {
+    background-color: rgb(232, 187, 187);
+    text-align: center;
+}
+
+.table-cell {
+    width: 30px;
+}
+
+td, th {
+    border: 1px solid rgb(154, 154, 154);
+    padding: 8px;
+}
+
+#table-explanation {
+    font-size: 12px;
+    font-style: italic;
+}
+
+#brackets-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.bracket {
+    margin-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.main-paragraph {
+    line-height: 25px;
+}
+
+.group-match-link {
+    border: 0;
+    width: 80px;
+    text-align: center;
+    background-color: #d5d5d5;
+    font-weight: bold;
+}
+
+.group-match-date {
+    text-align: left;
+    border: 0;
+}
+
+.group-match {
+    background-color: #e0e0e0;
+    border-collapse: collapse;
+    width: 960px;
+}
+
+.group-match-content {
+    display: none;
+}
+
+#group-match-not-top {
+    margin-top: 10px;
+}
+
+.player1 {
+    padding-right: 30px;
+    width: 410px;
+    text-align: right;
+    border: 0;
+}
+
+.player2 {
+    padding-left: 30px;
+    width: 340px;
+    text-align: left;
+    border: 0;
+}
+
+.match-time {
+    position: absolute;
+    width: 30px;
+    border: 0;
+}
+
+.group-match-deck-img {
+    width: 300px;
+    height: auto;
+}
+
+.player1-group-match-deck {
+    float: left;
+    background-color: #cfcece;
+}
+
+.player2-group-match-deck {
+    float: right;
+    background-color: #cfcece;
+}
+
+.group-match-video {
+    border: 0;
+}
+
+.match-duration-info {
+    border: 0;
+    font-style: italic;
+    text-align: center;
+}
+
+.collapsible {
+    border: 0;
+    text-align: right;
+    font-size: 16px;
+
+    color: #551A8B;
+    text-decoration: underline;
+    cursor: pointer;
+    background-color: #e0e0e0;
+}
+
+.collapsible-box {
+    border: 0;
+    text-align: right;
+    width: 60px;
+}
+
+.collapsible:hover {
+    background-color: #e0e0e0;
+    cursor: pointer;
+}
+
+.content {
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+.elixir {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 30px;
+    border: 0;
+}
+
+.elixir-img {
+    width: 20px;
+    height: auto;
+}
+
+.elixir-number {
+    font-size: 20px;
+    color: #9729ff;
+}
