@@ -1,0 +1,835 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('clashRoyaleBG.webp');
+    backdrop-filter: blur(5px);
+}
+
+#real-body {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    z-index: 0;
+}
+
+#warning-section {
+    width: 1000px;
+    height: 40px;
+    margin: auto;
+    padding: 20px;
+
+    background-color: #ecf454;
+    position: sticky;
+
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+
+    top: 75px;
+    z-index: 1;
+    display: none;
+}
+
+#warning-sign-img {
+    float: left;
+    width: 70px;
+    height: auto;
+}
+
+#warning-text {
+    margin-left: 120px;
+}
+
+#warning-h {
+    margin: 0;
+}
+
+#warning-h {
+    margin: 0;
+}
+
+nav {
+    background-color: #000000;
+    padding: 0px;
+    width: 100%;
+    z-index: 1000;
+
+    position: sticky;
+    top: 0;
+
+    border-bottom: 1px solid #ffffff;
+}
+
+#jet {
+    text-align: right;
+}
+
+#nav-items {
+    display: flex;
+    align-items: center;
+
+    padding: 0px 20px;
+}
+
+#logo-items {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    flex: 1;
+}
+
+#logo-text {
+    font-size: 30px;
+    font-weight: normal;
+    color: white;
+}
+
+#logo-img {
+    width: 60px;
+    height: auto;
+}
+
+#register-link {
+    font-size: 24px;
+    color: #ffffff;
+}
+
+nav ul li a:hover {
+    background-color: #575757;
+}
+
+#charts {
+    background-color: #ececec;
+}
+
+.container {
+    margin: 20px 20px;
+    padding: 20px;
+}
+
+.table {
+    width: 750px;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    line-height: 18px;
+}
+
+.qualified {
+    background-color: rgb(187, 236, 190);
+    text-align: center;
+}
+
+.table-qualification {
+    width: 175px;
+}
+
+.table-info {
+    background-color: rgb(225, 225, 225);
+}
+
+.not-qualified {
+    background-color: rgb(246, 246, 246);
+    text-align: center;
+}
+
+.potential-relegation {
+    background-color: rgb(232, 187, 187);
+    text-align: center;
+}
+
+.table-cell {
+    text-align: center;
+    width: 30px;
+    padding: 5px;
+}
+
+td, th {
+    border: 1px solid rgb(154, 154, 154);
+    padding: 8px;
+}
+
+.table-explanation {
+    font-size: 12px;
+    font-style: italic;
+    width: auto;
+}
+
+#brackets-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.bracket {
+    overflow-x: auto;
+}
+
+.group-seed-bracket {
+    border-collapse: collapse;
+    width: 325px;
+}
+
+.main-paragraph {
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.group-match-score-container {
+    background-color: #d8d8d8;
+    width: 60px;
+    text-align: center;
+}
+
+.match-time-container, .collapsible-container {
+    width: 60px; 
+    text-align: center;
+}
+
+.group-match-date {
+    text-align: left;
+    border: 0;
+}
+
+.group-match {
+    width: 920px;
+    background-color: #e1e1e1;  
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px; 
+    box-sizing: border-box;
+    gap: 20px;
+    line-height: 7px;
+}
+
+.group-match-result {
+    display: contents;
+}
+
+.group-match-player-container {
+    flex: 1; 
+    white-space: nowrap;
+}
+
+.flag, .flag-L, .flag-R {
+    width: 23px;
+    height: auto;
+    border: 1px solid rgb(191, 191, 191);
+    display: none;
+}
+
+.flag-L {
+    margin-left: 10px;
+}
+
+.flag-R {
+    margin-right: 10px;
+}
+
+.group-match-player-L, .group-match-player-R {
+    display: flex;
+    align-items: center;
+}
+
+.group-match-player-L {
+    justify-content: right; 
+}
+
+.group-match-player-R {
+    justify-content: left; 
+}
+
+.group-match-player-name {
+    padding: 15px 0px;
+}
+
+.group-match-player-name, .group-table-player-name {
+    text-decoration: none;
+    color: #2c34d1f5;
+}
+
+.group-match-player-name:hover, .group-table-player-name:hover {
+    text-decoration: underline;
+}
+
+#group-match-not-top {
+    margin-top: 10px;
+}
+
+.group-match-deck-img {
+    width: 280px;
+    height: auto;
+}
+
+.player1-group-match-deck {
+    float: left;
+    background-color: #cfcece;
+}
+
+.player2-group-match-deck {
+    float: right;
+    background-color: #cfcece;
+}
+
+.group-match-video {
+    border: 0;
+    text-align: center;
+}
+
+.group-match-video-in {
+    width: 300px;
+    height: 150px;
+}
+
+.match-duration-info {
+    border: 0;
+    font-style: italic;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.collapsible {
+    color: #551A8B;
+    text-decoration: underline;
+    cursor: pointer;
+
+    user-select: none;
+}
+
+.collapsible:hover {
+    cursor: pointer;
+}
+
+.content {
+    width: 920px;
+    display: none;
+    background-color: #e0e0e0;
+}
+
+.content-table-container {
+    overflow-x: auto; 
+    max-width: 100%;
+}
+
+.elixir {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 30px;
+    border: 0;
+    padding: 0;
+}
+
+.elixir-img {
+    width: 20px;
+    height: auto;
+}
+
+.elixir-number {
+    font-size: 20px;
+    margin-left: 10px;
+    color: #9729ff;
+}
+
+.round-score {
+    text-align: center; 
+    border: 0; 
+    padding: 0;
+    height: 30px;
+}
+
+.score-details {
+    font-style: italic;
+}
+
+.match-changes-text {
+    text-align: center; 
+    font-style: italic; 
+    border: 0;
+}
+
+.arrow {
+    width: 20px;
+    height: auto;
+}
+
+.playoffs-table {
+    width: 675px;
+    line-height: 18px;
+    border-collapse: collapse;
+}
+
+.playoffs-table-row {
+    text-align: center;
+}
+
+#playoff2 {
+    width: 900px;
+    margin: auto;
+    border-collapse: collapse;
+    line-height: 0px;
+}
+
+#playoffs-area {
+    overflow-x: auto; 
+    max-width: 100%;
+}
+
+#playoffs-area-container {
+    background-color: #e0e0e0;
+}
+
+/*QUARTER FINALS*/
+.column1 {
+    border: 0;
+    width: 25%;
+}
+
+.column2 {
+    border: 0;
+    width: 3%;
+}
+
+.column3 {
+    border: 0;
+    width: 8%;
+}
+
+/*SEMI FINALS*/
+.column4 {
+    border: 0;
+    width: 25%;
+}
+
+.column5 {
+    border: 0;
+    width: 3%;
+}
+
+.column6 {
+    border: 0;
+    width: 4%;
+}
+
+.column7 {
+    border: 0;
+    width: 4%;
+}
+
+/*FINALS*/
+.column8 {
+    border: 0;
+    width: 25%;
+}
+
+.column9 {
+    border: 0;
+    width: 3%;
+}
+
+.playoff2-player {
+    border: 1;
+    background-color: #f0f0f0;
+}
+
+.playoff2-player-points {
+    border: 1;
+    background-color: #e3e3e3;
+}
+
+.column1, .column2, .column3, .column4, .column5, .column6, .column7, .column8, .column9, .playoff2-player, .playoff2-player-points {
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 14px;
+}
+
+.playoff-title {
+    padding: 0;
+    text-align: center;
+    background-color: #d5d5d5;
+}
+
+#results-table {
+    width: 900px;
+    line-height: 18px;
+    border-collapse: collapse;
+}
+
+#result-cell {
+    width: 100px;
+}
+
+.group-pos-cell {
+    width: 90px;
+}
+
+#hero-section {
+    margin: auto; 
+    background-color: rgb(216, 220, 234); 
+    z-index: 0; 
+    padding: 20px;
+}
+
+#hero {
+    width: 950px;
+    margin: auto;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: #f2f4f6;
+}
+
+.hero-cell {
+    border-top: 0;
+    border-bottom: 0;
+    border-left: 1;
+    border-right: 1;
+}
+
+.table-player {
+    width: 200px;
+}
+
+#player-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.player-card {
+    margin: 10px;
+}
+
+.player-button {
+    width: 270px;
+    height: auto;
+
+    background-color: #e7e7e7;
+    color: #000;
+    padding: 5px 15px;
+    border: 1px solid #898989;
+    border-radius: 5px; 
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;  
+}
+
+.player-button:hover {
+    background-color: #d6d6d6;
+}
+
+.player-button:active {
+    background-color: #d0d0d0;
+    border: 1px solid #a0a0a0;
+}
+
+.player-deck-img {
+    width: 250px;
+    height: auto;
+}
+
+.player-card-title {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    width: 125px;
+    border-bottom: 0;
+    font-weight: bold;
+    word-wrap: break-word; /* Ensure text wraps within cells */
+    white-space: normal; /* Allow text to wrap */
+}
+
+.player-card-info {
+    padding-top: 5px;
+    width: 125px;
+    border-top: 0;
+    word-wrap: break-word; /* Ensure text wraps within cells */
+    white-space: normal; /* Allow text to wrap */
+}
+
+.player-content {
+    display: none;
+}
+
+.player-content-table {
+    border-collapse: collapse;
+    width: 270px;
+    table-layout: fixed;
+    background-color: #eaeaea;
+}
+
+#prizes-section {
+    width: 1000px; 
+    margin: auto; 
+    background-color: rgb(210, 177, 245); 
+    z-index: 0; 
+    padding: 0px;
+}
+
+#prizes {
+    padding: 20px;
+    text-align: center;
+}
+
+#prizes-info {
+    display: none;
+}
+
+#prizes-content {
+    display: none;
+}
+
+#prizes-readmore-button {
+    border: 0;
+    font-size: 18px;
+    color: #2d02c7;
+    text-decoration: underline;
+    cursor: pointer;
+    background-color: rgb(210, 177, 245);
+}
+
+#prizes-readless-button {
+    border: 0;
+    font-size: 18px;
+    color: #2d02c7;
+    text-decoration: underline;
+    cursor: pointer;
+    background-color: rgb(210, 177, 245);
+}
+
+#contact {
+    margin-bottom: 0px; 
+}
+
+@media screen and (max-width:1025px) 
+{
+    .container {
+        margin: 0px;
+        padding-top: 50px;
+    }
+
+    #real-body {
+        width: 100%;
+    }
+
+    #player-cards {
+        justify-content: center;
+    }
+
+    #hero {
+        width: 100%;
+    }
+
+    #prizes-section {
+        width: 100%;
+    }
+
+    #playoff2 {
+        width: 810px;
+    }
+
+    .column1, .column4, .column8 {
+        width: 28%;
+    }
+
+    .column3 {
+        width: 6%;
+    }
+
+    .column6, .column7 {
+        width: 3%;
+    }
+}
+
+@media screen and (max-width:960px) {
+    .group-match {
+        width: 100%;
+    }
+
+    .content {
+        width: auto;
+    }
+
+    #playoffs-area-container {
+        margin: 0px -20px;
+    }
+
+    #playoff2 {
+        width: 750px;
+    }
+
+    .column1, .column4, .column8 {
+        width: 30%;
+    }
+
+    .column3 {
+        width: 2%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .column6, .column7 {
+        width: 1%;
+        margin: 0;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width:875px) {
+    .group-match-deck-img {
+        width: 260px;
+    }
+
+    .group-match-video-in {
+        width: 270px;
+        height: 135px;
+    }
+
+    #playoffs-area-container {
+        padding: 0px 20px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .group-match-deck-img {
+        width: 240px;
+    }
+
+    .group-match-video-in {
+        width: 250px;
+        height: 125px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .group-match-result {
+        display: grid;
+        justify-items: center;
+        flex: 1;
+    }
+
+    .group-match {
+        gap: 10px;
+    }
+
+    #register-link {
+        font-size: 18px;
+    }
+
+    #jet {
+        width: 45%;
+    }
+
+    #nav-items {
+        padding: 0px 10px;
+    }
+}
+
+@media screen and (max-width:399px) {
+    .group-match {
+        font-size: 14px;
+        padding: 0px;
+        gap: 0;
+    }
+
+    .flag, .flag-L, .flag-R {
+        width: 20px;
+    }
+
+    .group-match-score-container {
+        width: 50px;
+        line-height: 0;
+    }
+
+    .table-explanation {
+        font-size: 11px;
+    }
+
+    #hero {
+        width: 100%;
+    }
+
+    #hero-section {
+        padding: 0;
+    }
+
+    .group-match-deck-img {
+        width: 225px;
+    }
+
+    .group-match-video-in {
+        width: 220px;
+        height: 110px;
+    }
+
+    .elixir-number {
+        font-size: 18px;
+    }
+
+    .round-score {
+        font-size: 14px;
+    }
+
+    .match-changes-text {
+        font-size: 14px;
+    }
+
+    .match-duration-info {
+        font-size: 14px;
+    }
+
+    #register-link {
+        font-size: 16px;
+    }
+
+    #logo-text {
+        font-size: 24px;
+    }
+
+    #logo-img {
+        width: 50px;
+    }
+
+    #nav-items {
+        padding: 0px 5px;
+    }
+}
+
+@media screen and (max-width:324px) {
+    .group-match {
+        font-size: 10px;
+    }
+
+    .flag, .flag-L, .flag-R {
+        width: 18px;
+    }
+
+    .group-match-score-container {
+        width: 30px;
+    }
+
+    .group-match-player-name {
+        padding: 10px 0px;
+    }
+
+    .table-explanation {
+        font-size: 10px;
+    }
+
+    #register-link {
+        font-size: 14px;
+    }
+
+    #logo-text {
+        font-size: 20px;
+    }
+
+    #logo-img {
+        width: 45px;
+    }
+}
